@@ -4,6 +4,7 @@ By Pierre-Yves Orban
 
 This Android Phonegap plugin allows you to easily send SMS (using the native SMS Manager instead of the default SMS app)
 Works with Phonegap 2.x
+This plugin was successfully tested with Phonegap 2.5 and Android 4.2.2 (on a Samsung Galaxy Nexus device).
 
 ## Adding this plugin to your project ##
 0. (Make sure you are using Phonegap > 2.0)
