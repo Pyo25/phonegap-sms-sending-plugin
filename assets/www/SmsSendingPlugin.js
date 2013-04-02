@@ -22,9 +22,7 @@ THE SOFTWARE.
 
 cordova.define("cordova/plugin/smssendingplugin", function(require, exports, module) {
   var exec = require('cordova/exec');
-  
   var SmsSendingPlugin = function() {};
-
 
   /**
    * Check if the device has a possibility to send and receive SMS
@@ -38,25 +36,6 @@ cordova.define("cordova/plugin/smssendingplugin", function(require, exports, mod
   SmsSendingPlugin.prototype.send = function(phone, message, successCallback,failureCallback) {
     return exec(successCallback, failureCallback, 'SmsSendingPlugin', 'SendSMS', [phone, message]);
   }
-
-  /**
-   * Check if the device has a possibility to send and receive SMS
-   */
-   /*
-  SmsPlugin.prototype.receiveSms = function(successCallback,failureCallback) {
-    return exec(successCallback, failureCallback, 'SmsPlugin', 'receiveSMS', []);
-  }
-  */
-
-  /**
-   * Check if the device has a possibility to send and receive SMS
-   */
-   /*
-  SmsPlugin.prototype.stopReceiveSms = function(successCallback,failureCallback) {
-    return exec(successCallback, failureCallback, 'SmsPlugin', 'StopReceiveSMS', []);
-  }
-  */
-
 
   var smssendingplugin = new SmsSendingPlugin();
   module.exports = smssendingplugin;
