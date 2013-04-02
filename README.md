@@ -23,6 +23,7 @@ var smsSendingPlugin = cordova.require('cordova/plugin/smssendingplugin');
 ### isSupported ###
 Check if the SMS technology is supported by the device. For example:
 
+```javascript
   smsSendingPlugin.isSupported ((function(supported) {
     if(supported) 
       alert("SMS supported !");
@@ -31,16 +32,18 @@ Check if the SMS technology is supported by the device. For example:
   }), function() {
     alert("Error while checking the SMS support");
   });
+```
 
 ### send ###
 Send an SMS message.  For example:
 
+```javascript
   smsSendingPlugin.send ("0032472345678", "Hello World !", function() {
     alert("Message sent :-)");
   }, function() {
     alert("Message not sent :s");
   });
-
+```
   
 ## Licence ##
 
