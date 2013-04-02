@@ -18,8 +18,10 @@ Works with Phonegap 2.x
 
 ## Using the plugin ##
 To instantiate the plugin object:
+```javascript
 var smsSendingPlugin = cordova.require('cordova/plugin/smssendingplugin');
- 
+```
+
 ### isSupported ###
 Check if the SMS technology is supported by the device. For example:
 
